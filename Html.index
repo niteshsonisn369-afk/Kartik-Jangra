@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kartik Jangra</title>
+
+  <style>
+    /* -----------------------
+       AESTHETIC THEME COLORS
+    ------------------------*/
+    body {
+      font-family: "Poppins", sans-serif;
+      background: linear-gradient(135deg, #fcefee, #e7f0fd, #fff7e6);
+      margin: 0;
+      padding: 0;
+      color: #444;
+      transition: background 1s ease;
+    }
+
+    header {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(10px);
+      padding: 25px;
+      border-bottom: 2px solid rgba(255, 182, 193, 0.4);
+    }
+
+    h1 {
+      color: #6b4e71;
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-top: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    section {
+      padding: 20px 10%;
+      line-height: 1.8;
+    }
+
+    h2 {
+      color: #7858a6;
+      border-left: 4px solid #d8b4e2;
+      padding-left: 10px;
+      font-size: 1.6em;
+    }
+
+    pre {
+      background-color: rgba(255, 255, 255, 0.7);
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 15px;
+      overflow-x: auto;
+      border: 1px solid #f2e5ff;
+    }
+
+    a {
+      color: #b76e79;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      color: #a0526a;
+    }
+
+    form {
+      margin: 30px auto;
+      padding: 25px;
+      width: 60%;
+      background: rgba(255, 255, 255, 0.8);
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(8px);
+    }
+
+    label {
+      font-weight: bold;
+      color: #7858a6;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 8px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 15px;
+      background: #fdfaff;
+    }
+
+    button {
+      background-color: #b79ced;
+      color: white;
+      padding: 10px 20px;
+      margin-top: 15px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #9f86c0;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1><b>Kartik Jangra</b></h1>
+    <img src="https://via.placeholder.com/200" alt="Kartik Jangra">
+  </header>
+
+  <section>
+    <h2>Introduction</h2>
+    <pre>
+<b>Kartik</b> is a professional Bakchod.
+He is 17 years old.
+
+<b>Birth:</b> 30 February 2008
+<b>Father's Name:</b> Nitesh Soni
+<b>My Instagram:</b> <a href="https://www.instagram.com/jangrakartik0001" target="_blank">My Insta</a>
+    </pre>
+
+    <p><i>
+      Kartik Jangra is a bright, determined, and curious student known for his enthusiasm toward learning and his ability
+      to adapt to new challenges with ease. Born and raised in a small town, Kartik developed a strong sense of discipline
+      and curiosity from an early age. He has always been fascinated by discovery — whether it’s through books,
+      experiments, or real-life experiences...
+    </i></p>
+  </section>
+
+  <form id="commentForm" action="#" method="post">
+    <div>
+      <label for="comment">Leave a comment:</label><br>
+      <input id="comment" name="comment" type="text" placeholder="Write something nice..." required>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    const form = document.getElementById('commentForm');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const comment = document.getElementById('comment').value.trim();
+      if (comment === "") {
+        alert("Please enter a comment before submitting!");
+      } else {
+        alert(`🌸 Thanks for your comment! Kartik appreciates your feedback: "${comment}"`);
+        form.reset();
+      }
+    });
+  </script>
+
+</body>
+
+</html>
